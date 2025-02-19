@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: azure;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.3em;
+  display: flex;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-size: 3rem;
+}
+nav h1 span {
+  color: green;
+}
+nav h1 i {
+  color: rgb(76, 183, 76);
+}
+nav #menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+nav #menu a {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+nav #menu i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+nav #menu :hover {
+  color: green;
+  border-bottom: 0.15rem solid black;
+}
+nav #right_nav {
+  display: none;
+  gap: 1.5rem;
+}
+nav #right_nav button {
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+}
+nav #right_nav .contact {
+  background-color: rgba(255, 255, 255, 0.61);
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+nav #right_nav .login {
+  background-color: rgb(76, 183, 76);
+  font-weight: bold;
+  color: white;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.section1 {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.section1 #taxi {
+  padding: 0.5rem;
+  color: rgb(76, 183, 76);
+  border: 2px solid green;
+  border-radius: 1.5rem;
+  gap: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+.section1 #taxi .ri-arrow-right-line {
+  font-size: 1.5rem;
+}
+
+.section2 {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.section2 #first {
+  text-align: start;
+}
+.section2 #first h3 {
+  font-size: 3.5rem;
+}
+.section2 #first p {
+  font-size: 1.3rem;
+  opacity: 0.5;
+}
+.section2 .btn {
+  margin-top: 1rem;
+}
+.section2 .btn button {
+  display: flex;
+  padding: 0.7rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  width: 100%;
+  justify-content: center;
+}
+.section2 .btn .learn_more {
+  background-color: rgba(255, 255, 255, 0.61);
+  font-weight: bold;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.section2 .btn .Get_started {
+  background-color: rgb(76, 183, 76);
+  font-weight: bold;
+  color: white;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.section3 img {
+  width: 100%;
+  aspect-ratio: 1/0.4;
+}
+
+@media (min-width: 1020px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.3em;
+  }
+  nav h1 {
+    font-size: 3rem;
+  }
+  nav h1 span {
+    color: green;
+  }
+  nav #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  nav #menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+  nav #menu i {
+    display: none;
+  }
+  nav #menu :hover {
+    color: green;
+    border-bottom: 0.15rem solid black;
+  }
+  nav #right_nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+  .section2 #first {
+    text-align: center;
+  }
+  .section2 #first h3 {
+    font-size: 5rem;
+  }
+  .section2 #first p {
+    font-size: 1.5rem;
+  }
+  .section2 .btn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .section2 .btn button {
+    width: 10rem;
+  }
+  .section3 img {
+    width: 100%;
+    aspect-ratio: 1/0.23;
+  }
+}/*# sourceMappingURL=style.css.map */
