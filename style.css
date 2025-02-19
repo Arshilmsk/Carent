@@ -74,6 +74,11 @@ nav #right_nav .login {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
+.section0 img {
+  width: 100%;
+  aspect-ratio: 1/0.4;
+}
+
 .section1 {
   margin-top: 1rem;
   display: flex;
@@ -131,11 +136,35 @@ nav #right_nav .login {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-.section3 img {
+.view-1 {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  aspect-ratio: 1/0.4;
+  padding: 1.5rem 1rem;
+}
+.view-1 .marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  /* gap: 6rem; */
+}
+.view-1 .marquee .images {
+  display: flex;
+  text-align: center;
+  height: 3rem;
+  padding-right: 3rem;
+  gap: 4rem;
+  animation: marquee 50s linear infinite both;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @media (min-width: 1020px) {
   nav {
     background-color: rgba(0, 0, 0, 0.05);
@@ -191,8 +220,28 @@ nav #right_nav .login {
   .section2 .btn button {
     width: 10rem;
   }
-  .section3 img {
+  .section0 img {
     width: 100%;
     aspect-ratio: 1/0.23;
+  }
+  .view-1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem 5% rem;
+  }
+  .view-1 .marquee {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    /* gap: 6rem; */
+  }
+  .view-1 .marquee .images {
+    display: flex;
+    text-align: center;
+    height: 3rem;
+    padding-right: 3rem;
+    gap: 4rem;
+    animation: marquee 50s linear infinite both;
   }
 }/*# sourceMappingURL=style.css.map */
